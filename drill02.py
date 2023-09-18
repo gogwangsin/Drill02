@@ -9,13 +9,16 @@ y = 90
 def drawRec():
     global x
     global y
+    
     if x >= 790 and y < 550:
         y = y + 2
-    elif x < 790 :
+    elif x < 790:
         x = x + 2
 
     if y >= 550:
         x = x - 4
+        if x < 80:
+            y = y-4
     elif y > 90 and x < 80:
         y = y -4
 
